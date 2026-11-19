@@ -1,0 +1,27 @@
+一水千田｜v4 改版＋網站後台 上傳說明
+==================================================
+
+這個壓縮檔只包含「新增或修改過的檔案」，沒有任何檔案需要刪除。
+
+上傳方式
+1. 解壓縮後，把裡面所有檔案和資料夾，原樣放進網站最上層（和 index.html 同一層）。
+2. 遇到同名檔案時，選擇「取代／覆蓋」。
+   - 資料夾（admin、css、js、docs、tools）要保持原本的層級，例如 js/render.js 要放在 js 資料夾裡。
+3. images、data、font 等資料夾完全沒有變動，不需要重新上傳。
+
+用 GitHub 網頁上傳時
+- 進入儲存庫 → Add file → Upload files → 把解壓縮後的「所有內容」一次拖進去（資料夾也可以直接拖）。
+- 下方填寫說明後按 Commit changes。GitHub Pages 約 1–2 分鐘後更新。
+
+上傳後請檢查
+- 首頁、大圳故事、互動地圖、桌遊介紹、小遊戲、桌遊試玩 都能正常開啟。
+- 首頁的「立體看大圳」3D 模型有出現（這一項在開發環境無法測試，請實際確認）。
+- 開啟 你的網址/admin.html 可以進入後台。
+
+檔案說明
+- 新增：admin.html、admin/（網站後台）、js/cms.js（後台草稿預覽）、css/tokens.css（設計變數）
+- 新增：DESIGN_SYSTEM.md（設計規範）、docs/（內容盤點、文案快照、設計預覽）、tools/（文案檢查工具）、
+        tailwind.config.js（預備用，網站目前不需要）、後台使用說明.md
+- 修改：index.html、story.html、cards.html、map.html、index1.html、play.html、style.css、js/render.js、tres-scene.js
+
+想回到改版前的樣子：在 GitHub 上把這次的 commit「Revert」即可，或重新上傳舊版的上述檔案。
